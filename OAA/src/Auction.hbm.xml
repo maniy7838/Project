@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="oaa.web.entities.Auction" table="Auction">
+		<meta attribute="class-description">This class contains the Auction details</meta>
+
+		<id name="id" type="int" column="id">
+			<generator class="native"></generator>
+		</id>
+
+		<property name="auctionId" column="auction_id" type="int"></property>
+		<property name="productId" column="product_id" type="int"></property>
+		<property name="userId" column="user_id" type="int"></property>
+		<property name="startDate" column="start_date" type="string"></property>
+		<property name="endDate" column="end_date" type="string"></property>
+		<property name="minBidPrice" column="minBidprice" type="int"></property>
+		<property name="productName" column="product_name" type="string"></property>
+		<property name="description" column="description" type="string"></property>
+		<property name="status" column="status" type="boolean"></property>
+		<property name="photo" column="photo" type="blob"></property>
+		<property name="curDate" column="cur_date" type="date"></property>
+
+	</class>
+</hibernate-mapping>
