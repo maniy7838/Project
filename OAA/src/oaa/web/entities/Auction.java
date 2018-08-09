@@ -1,8 +1,10 @@
-package oaa.web.entities;
+package src.oaa.web.entities;
 
 import java.io.Serializable;
 import java.sql.Blob;
 import java.sql.Date;
+
+import org.apache.xpath.operations.String;
 
 public class Auction implements Serializable {
 
@@ -15,7 +17,7 @@ public class Auction implements Serializable {
 	private String productName;
 	private String description;
 	private Blob photo;
-	private Boolean status;
+	private boolean status;
 	private Date curDate;
 
 	public Auction(int auctionId, int productId, int userId, String startDate, String endDate, int minBidPrice,

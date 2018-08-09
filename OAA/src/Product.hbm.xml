@@ -4,23 +4,21 @@
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-	<class name="oaa.web.entities.Auction" table="auction_master">
+	<class name="oaa.web.entities.Product" table="Product">
 		<meta attribute="class-description">This class contains the Auction details</meta>
 
-		<id name="auctionId" type="int" column="auction_id">
+		<id name="productId" type="int" column="product_id">
 			<generator class="native"></generator>
 		</id>
 
-		<property name="productId" column="product_id" type="int"></property>
-		<property name="userId" column="user_id" type="int"></property>
-		<property name="startDate" column="start_date" type="string"></property>
-		<property name="endDate" column="end_date" type="string"></property>
-		<property name="minBidPrice" column="minBidprice" type="int"></property>
 		<property name="productName" column="product_name" type="string"></property>
+		<property name="userId" column="user_id" type="int"></property>
+		<property name="categoryId" column="category_id" type="int"></property>
 		<property name="description" column="description" type="string"></property>
+		<property name="minBidPrice" column="min_bid_price" type="int"></property>
 		<property name="status" column="status" type="boolean"></property>
 		<property name="photo" column="photo" type="blob"></property>
-		<property name="curDate" column="cur_date" type="date"></property>
+		<property name="Date" column="date" type="date"></property>
 
 	</class>
 </hibernate-mapping>

@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.sql.Blob;
 import java.util.Date;
 
+import org.apache.xpath.operations.String;
+
 public class Product implements Serializable {
 
 	private int productId;
